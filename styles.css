@@ -1,0 +1,310 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+/* ========HEADER========================================= */
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-img {
+  width: 120px;
+  height: 70px;
+  margin: 10px 0 0 60px;
+  align-self: baseline;
+}
+
+#header-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+#nav-bar li {
+  margin: 30px;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #444444;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* =========MAIN========================================= */
+
+main {
+  margin-top: 130px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* ============FORM=============================== */
+
+#form {
+  width: 300px;
+  margin: 30px auto;
+}
+
+#email {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-bottom: 17px;
+}
+
+.form_submit {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#submit {
+  display: block;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  padding: 3px;
+  background-color: #f3d342;
+  color: #000000;
+  font-weight: 800;
+  border: none;
+}
+
+#submit:hover {
+  background-color: rgb(243, 211, 66, 0.6);
+}
+
+/* =============SECTION-PRODUCTS===================== */
+
+#features {
+  width: 70%;
+  height: auto;
+  margin: 70px auto 0 auto;
+}
+
+.seccion_product {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 30px;
+}
+
+.img_seccion {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-right: 100px;
+  margin-top: -8px;
+}
+
+.quality {
+  width: 80px;
+  height: 100px;
+  margin-left: 13px;
+}
+
+#how-it-works {
+  margin-top: 80px;
+}
+
+#video {
+  display: block;
+  margin: auto;
+}
+
+/*===============CONTENEDOR_GRID=============== */
+
+#pricing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+  width: 70%;
+  margin: 60px auto 40px auto;
+}
+
+.grid-column {
+  border: 1px solid #000000;
+}
+
+.grid-title {
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #eeeeee;
+}
+
+.grid-precio {
+  text-align: center;
+  margin: 20px 0 15px 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.grid-lista {
+  list-style-type: none;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.grid-button {
+  display: block;
+  width: 80px;
+  margin: 20px auto;
+  padding: 7px;
+  cursor: pointer;
+  background-color: #f3d342;
+  border: none;
+}
+
+.grid-button:hover {
+  background-color: #e4aa2e;
+}
+
+/* ========== FOOTER ========================= */
+
+#footer {
+  display: flex;
+  background-color: #eeeeee;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contenedor-footer {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contenedor-footer li {
+  list-style: none;
+}
+.contenedor-footer a {
+  text-decoration: none;
+  margin-right: 25px;
+  color: #000000;
+}
+
+#footer-copyright {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #444444;
+}
+
+/* ============ MEDIA QUERIES ===================== */
+
+@media screen and (max-width: 800px) {
+  #nav-bar {
+    padding-right: 5px;
+  }
+
+  #nav-bar li {
+    margin: 30px 5px;
+  }
+
+  main {
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  #features {
+    width: 85%;
+  }
+
+  .seccion_product {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .img_seccion {
+    margin: 0 0 30px 0;
+    min-width: 30px;
+    min-height: 40px;
+  }
+
+  #pricing {
+    grid-template-columns: repeat(1, 1fr);
+    width: 400px;
+    gap: 25px;
+  }
+
+  #footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #header {
+    height: 80px;
+  }
+
+  .contenedor-img {
+    margin: 10px auto;
+  }
+
+  #header-img {
+    min-width: 100px;
+    min-height: 50px;
+  }
+
+  #nav-bar {
+    display: none;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  main {
+    width: 560px;
+  }
+
+  .img_seccion {
+    margin-right: 50px;
+  }
+
+  #video {
+    width: 80%;
+  }
+
+  #pricing {
+    width: 50%;
+  }
+}
