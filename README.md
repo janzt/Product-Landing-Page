@@ -1,2 +1,3 @@
-# Repository-product-landing-page
+Example of a Product Landing page.
+ 
  
